@@ -1,0 +1,19 @@
+services:
+  ros2:
+    container_name: ros2
+    working_dir: /
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      network: host
+    network_mode: host
+    privileged: true
+    tty: true
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - ..:/ros2
+      - /dev:/dev
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /var/run/docker.sock:/var/run/docker.sock
+
