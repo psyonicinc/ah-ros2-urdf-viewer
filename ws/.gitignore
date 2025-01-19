@@ -1,0 +1,74 @@
+tignore file
+
+build/
+install/
+log/
+build_isolated/
+install_isolated/
+venv/
+matlab_gen/
+.ipynb_checkpoints/
+build_external/
+**/cmake-build-debug
+
+# Deep learning
+*.weights
+*.pth
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+devel/*.obj
+build/*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Python byte code
+*.pyc
+
+#PyCharm
+.idea/
+
+#vscode
+.vscode/
+.cache/
+
+# Log file
+*.log
+
+*\#
+*~
+
+# VS Code files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+src/venv/
+src/matlab_gen
+
+
