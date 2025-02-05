@@ -1,6 +1,6 @@
 services:
-  ros2:
-    container_name: ros2
+  ah_ros2_urdf_viewer:
+    container_name: ah_ros2_urdf_viewer
     working_dir: /
     build:
       context: ..
@@ -12,7 +12,6 @@ services:
     environment:
       - DISPLAY=${DISPLAY}
     volumes:
-      - ..:/ros2
       - /dev:/dev
       - /tmp/.X11-unix:/tmp/.X11-unix
       - /var/run/docker.sock:/var/run/docker.sock
