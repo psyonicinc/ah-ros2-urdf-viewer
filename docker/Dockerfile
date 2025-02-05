@@ -40,4 +40,4 @@ USER $USERNAME
 # Source ROS bash
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> /home/$USERNAME/.bashrc
 RUN echo "source /ws/install/setup.bash" >> /home/$USERNAME/.bashrc
-CMD ["bash", "-c", "source /opt/ros/${ROS_DISTRO}/setup.bash && source /ws/install/setup.bash && ros2 launch urdf_launch display.launch.py urdf_package:=urdf_ah urdf_package_path:=urdf/ability_hand_left_large.urdf"]
+CMD ["bash", "-c", "source /opt/ros/${ROS_DISTRO}/setup.bash && source /ws/install/setup.bash && ros2 launch urdf_launch display.launch.py urdf_package:=urdf_ah urdf_package_path:=urdf/ability_hand_right_large.urdf"]
