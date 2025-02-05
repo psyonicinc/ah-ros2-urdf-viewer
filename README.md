@@ -12,7 +12,7 @@ Docker installation instructions for various linux distributions can be found
 
 ## Launch
 
-# Linux
+### Linux
 
 Navigate to the docker directory and enter the following command
 
