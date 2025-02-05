@@ -9,7 +9,7 @@ launches it using RVIZ.
 ### Linux
 
 Docker installation instructions for various linux distributions can be found
-[here](https://docs.docker.com/engine/install/) Ensure you do the 
+[here](https://docs.docker.com/engine/install/). Ensure you do the 
 [post installation instructions](https://docs.docker.com/engine/install/linux-postinstall/)
 
 
