@@ -4,7 +4,7 @@ This repo has a Docker Compose / Dockerfile which pulls the latest URDF from the
 ability-hand-api repository and converts it to a ROS2 friendly format, and 
 launches it using RVIZ.
 
-## Installing docker
+## Installing Requirements
 
 ### Windows
 
