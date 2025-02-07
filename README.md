@@ -2,7 +2,7 @@
 
 This repo has a Docker Compose / Dockerfile which pulls the latest URDF from the 
 ability-hand-api repository and converts it to a ROS2 friendly format, and 
-launches it using RVIZ.
+launches it using RViz.
 
 ## Installing Requirements
 
@@ -29,9 +29,7 @@ Docker installation instructions for various linux distributions can be found
 - Enter `$env:DISPLAY="host.docker.internal:0.0"`
 - Navigate to the docker directory and enter the following command
 
-`docker compose build`
-
-Followed by:
+Launch using:
 
 `docker compose up`
 
@@ -39,5 +37,15 @@ Followed by:
 
 Navigate to the docker directory and enter the following command
 
-`xhost + && docker compose build && docker compose up`
+`xhost + && docker compose up`
 
+## Usage
+
+RViz allows you to visualize all transforms (TF) from the hand or attach the 
+base_link of the hand to other frame TF topics.  You can also find the location
+of TF's relative to other TF's using tf2_echo.  For example to get the 
+transform from the base_link to pinky tip you can use.
+
+`ros2 run tf2_ros tf2_echo base_link pinky_anchor`
+
+or you can do this within your code using the TransformListener class
