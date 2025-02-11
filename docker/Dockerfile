@@ -22,8 +22,8 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y python3-pip vim tmux git ros-${ROS_DISTRO}-joint-state-publisher-gui
 
 # Download latest AH API repo and copy urdf files
-COPY /ws /ws/
 RUN git clone https://github.com/psyonicinc/ability-hand-api.git 
+COPY /ws /ws/
 RUN cp /ability-hand-api/URDF/*.urdf /ws/src/urdf_ah/urdf
 RUN cp /ability-hand-api/URDF/models/* /ws/src/urdf_ah/models/
 RUN cd /ws/src/urdf_ah/urdf && python3 convert_to_ros2_urdf.py ability_hand_left_large.urdf
