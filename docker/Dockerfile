@@ -30,6 +30,7 @@ RUN cd /ws/src/urdf_ah/urdf && python3 convert_to_ros2_urdf.py ability_hand_left
 RUN cd /ws/src/urdf_ah/urdf && python3 convert_to_ros2_urdf.py ability_hand_left_small.urdf
 RUN cd /ws/src/urdf_ah/urdf && python3 convert_to_ros2_urdf.py ability_hand_right_large.urdf
 RUN cd /ws/src/urdf_ah/urdf && python3 convert_to_ros2_urdf.py ability_hand_right_small.urdf
+RUN cd /ws/src/urdf_ah/urdf && python3 convert_to_ros2_urdf.py ability_hand_right_large_no_fsr.urdf
 RUN source /opt/ros/${ROS_DISTRO}/setup.bash && cd /ws/ && colcon build && source install/setup.bash 
 
 ENV SHELL /bin/bash
